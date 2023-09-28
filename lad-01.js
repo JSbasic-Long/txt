@@ -59,52 +59,44 @@
 // Bài 3
 // Câu a :
 let a = 1, b = 2
-console.log('Tong =', a+b)
-console.log('Hieu =', a-b)
-console.log('Tich =', a*b)
-console.log('Thuong =', a/b)
+console.log('Tổng =', a + b)
+console.log('Hiệu =', a - b)
+console.log('Tích =', a * b)
+console.log('Thương =', a / b)
 // Câu b :
-console.log('Trung binh cong =', (a+b)/2 )
+console.log('Trung bình cộng =',(a+b)/2)
 // Câu c :
 let x = 3, y = 4, z = 6
-let Bieuthuc1 = x**2 + 2*x + 1
-let Bieuthuc2 = x**3 - (3*x*y) - 5*y + 3*(y**2)
-let Bieuthuc3 = (x*y)**2 - (2*(x**2)*y) + 13*y
-let Bieuthuc4 = 4*(x**3) + 3*x*y + y**2 - (2*(x**2) - 3*y)
-let Bieuthuc5 = ((5*x**2) / (4*x*y)) + y**2
-let Bieuthuc6 = x**2 - 2*z*x*y / y**2 + 5*x - 2*y**2 + 4*x*z**3 + z**3
-console.log('Biểu thức 1 =',Bieuthuc1)
-console.log('Biểu thức 2 =',Bieuthuc2)
-console.log('Biểu thức 3 =',Bieuthuc3)
-console.log('Biểu thức 4 =',Bieuthuc4)
-console.log('Biểu thức 5 =',Bieuthuc5)
-console.log('Biểu thức 6 =',Bieuthuc6)
-//Câu d :
-let duong_kinh = 5 , pi_d = 3.14
-console.log('chu vi hình tròn R =', duong_kinh*pi_d )
-let R = duong_kinh*pi_d
-console.log('diện tích hình tròn S = ', pi_d*2*R)
+console.log('Biểu thức 1 =',x*x + 2*x + 1)
+console.log('Biểu thức 2 =',x*x*x - 3*x*y - 5*y + 3*y*y)
+console.log('Biểu thức 3 =',(x*y)*(x*y) - 2*x*x*y + 13*y)
+console.log('Biểu thức 4 =',4*x*x*x + 3*x*y + y*y - (2*x*x - 3*y))
+console.log('Biểu thức 5 =',((5*x*x) / (4*x*y)) + y*y)
+console.log('Biểu thức 6 =',x*x - ((2*z*x*y) / (y*y)) + 5*x - 2*y*y + 4*x*z*z*z + z*z*z)
+// Câu d :
+let duongKinh, Pi
+duongKinh = 5, Pi = 3.14
+console.log('Chu vi hình tròn =',duongKinh * Pi)
+let R = duongKinh * Pi
+console.log('Diện tích hình tròn =', (R*R)*Pi)
 // Câu e :
-let chieu_dai = 15, chieu_rong = 10
-console.log('chu vi hình chữ nhật =', 2*(chieu_dai + chieu_rong))
-console.log('diện tích hình chữ nhật =', chieu_dai * chieu_rong) 
+let chieuDai = 15, chieuRong = 10
+console.log('Chu vi hình chữ nhật =',(chieuDai + chieuRong)/2)
+console.log('Diện tích hình chữ nhật =',chieuDai*chieuRong)
 // Câu f :
-let quang_duong = 120 , thoi_gian = 2.10
-console.log('vận tốc xe hơi V =',quang_duong/thoi_gian)   
-//Câu g :
-let thoigian = 2.30, vantoc = 60
-console.log('quãng đường =',vantoc*thoigian)
+let S1 = 120, T1 = 130/60 
+console.log('Vận tốc xe V =',S1/T1,'Km/h')
+// Câu g :
+let T2 = 150/60, V2 = 60
+console.log('Quãng đường S=',V2*T2,'Km')
 // Câu h :
-let vantoc_h = 15.2, thoigian_h = 3
-console.log('quãng đường =', vantoc_h*thoigian_h)
+let V3 = 15.2, T3 = 3
+console.log('Quãng đường S=',V3*T3,'Km')
 // Câu i :
-let vantoc_i = 42, thoigian_i = 2.40
-console.log('quãng đường =',vantoc_i*thoigian_i)
+let T4 = 200/60, V4 = 42
+console.log('Quãng đường S=',V4*T4,'Km')
 // Câu j :
-let chieudai1 = 8, chieurong1 = 5, chieucao1 = 6
-console.log('Khối gỗ 1 =',chieudai1*chieurong1*chieucao1)
-khoi1 = chieudai1*chieurong1*chieucao1
-let chieudai2 = 24, chieurong2 = 5, chieucao2 = 6
-console.log('Khối gỗ 2 =',chieudai2*chieurong2*chieucao2)
-khoi2 = chieudai2*chieurong2*chieucao2
-console.log('Tổng thể tích khối gỗ =', khoi1 + khoi2 )
+let khoiCau1, khoiCau2
+console.log(khoiCau1,8*6*5)
+console.log(khoiCau2,24*6*5)
+console.log('Thể tích khối cầu =',khoiCau1 + khoiCau2)
