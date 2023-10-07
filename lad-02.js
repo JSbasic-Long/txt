@@ -143,20 +143,20 @@
 // diemTB(10,10,10,)
 
 
-// Câu d 
-function giaCuocDT(n){
-    let phiCoDinh = 25000
-    if(n>=0 && n<=50){
-        chiPhi = n*600
-    }else if(n>50 && n<=200){
-        chiPhi = (n-50)*400 + 50*600 
-    }else if(n>200){
-        chiPhi = (n-200)*200 + 50*600 + 150*400 
-    }
-    tongChiPhi = phiCoDinh * chiPhi
+// // Câu d 
+// function giaCuocDT(n){
+//     let phiCoDinh = 25000
+//     if(n>=0 && n<=50){
+//         chiPhi = n*600
+//     }else if(n>50 && n<=200){
+//         chiPhi = (n-50)*400 + 50*600 
+//     }else if(n>200){
+//         chiPhi = (n-200)*200 + 50*600 + 150*400 
+//     }
+//     tongChiPhi = phiCoDinh * chiPhi
     
-    return tongChiPhi
-}
-giaCuocDT(800)
-giaCuocDT(120)
-giaCuocDT(20)
+//     return tongChiPhi
+// }
+// giaCuocDT(800)
+// giaCuocDT(120)
+// giaCuocDT(20)
