@@ -50,7 +50,7 @@
 
 // // Câu f
 
-//  // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+//  let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // let ex = []
 // let e = 0
 // let check = true
@@ -88,7 +88,7 @@
 // console.log(tanSoXuatHien)
 
 // // Câu g
-//  // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+ // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 
 // for( i = arr.length - 1 ; i >= 0 ; i-- ){
 //     arr[i+1] = arr[i] 
@@ -101,7 +101,7 @@
 // // newArr = [117]
 // // arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 
- // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+//  let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 
 // // Câu h 
 //  let checkTangDan = true
@@ -166,6 +166,13 @@
 // }
 
 //--------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//------------------------- Vòng While ---------------------------
 
 
 // // Mẫu
@@ -175,17 +182,371 @@
 //     n= n+1
 // }
 
-//------------------------- Vòng While ---------------------------
+
+// // // Câu a
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let i=0
+// while(arr[i] !== undefined){
+//         console.log('Phần tử thứ %s = %s',i,arr[i])
+//         i++
+// }
+
+// // Câu b
+// i=0
+// let tongPT = 0
+// while(arr[i] !== undefined){
+//         tongPT += arr[i]
+//         i++
+// }
+// console.log('Tổng PT =', tongPT )
+
+// // Câu c
+
+// let max = -Infinity
+// let min = Infinity
+// i = 0
+// while(arr[i] !== undefined){
+//         if(arr[i]>max){
+//                 max = arr[i]
+//         }
+//         if(arr[i]<min){
+//                 min = arr[i]
+//         }
+//         i++
+// }
+// console.log('Phần tử lớn nhất = %s,Phần tử nhỏ nhất = %s',max,min)
+
+// // Câu d
+
+// console.log('Trung bình Cộng =', tongPT / i)
+
+// // Câu e
+
+// i = arr.length 
+// while(i--){
+//         console.log('Phần tử thứ %s = %s ',i,arr[i])
+// }
+
+// // Câu f
+
+// i = 0
+// let tanSoXuatHien =  {}
+// while(arr[i] !== undefined){
+//         tanSoXuatHien[arr[i]] = (tanSoXuatHien[arr[i]] || 0 ) +1 
+//         i++
+// }
+// console.log('Số lần xuất hiện',tanSoXuatHien)
+
+
+// // câu g
+
+// i = arr.length 
+
+// while(i--){  
+//         arr[i+1] = arr[i] 
+// }
+// console.log(arr)
+// arr[0] = 117
+// console.log(arr)
+
+// // Câu h
+
+// i = 0
+// let checkTangDan = true
+// while(arr[i] !== undefined){
+//         if(arr[i] > arr[i+1]){
+//                 checkTangDan = false
+//                 break
+//         }
+//         i++
+// }
+//         if(checkTangDan === true){
+//                 console.log('Dãy số tăng dần')
+//         }
+//         else{
+//                 console.log('Dãy số không tăng dần đều')
+//         }
+        
+
+
+// //Câu i
+
+// i = 0
+
+// let temp = 0
+
+
+// while(arr[i] !== undefined){
+//     let j = i + 1
+//             while(arr[j] !== undefined){
+//             if(arr[i] < arr[j]){
+//                 temp = arr[i]
+//                 arr[i] = arr[j]
+//                 arr[j] = temp
+//             }
+//        j++
+//     }
+//     i++
+// }
+// console.log(arr)
+
+
+// // Câu j
+
+// i = 0
+// temp = 0
+
+// while(arr[i] !== undefined){
+//      j = i + 1
+//         while(arr[j] !== undefined){
+//             if(arr[i] > arr[j]){
+//                 temp = arr[i]
+//                 arr[i] = arr[j]
+//                 arr[j] = temp
+//             }
+//         j++
+//         }
+//     i++
+// }
+// console.log(arr)
 
 
 
+// //Câu k
+
+// i = 0 
+// while(i < arr.length){
+//         if(arr[i] % 2 == 0){
+//                 console.log('Phần tử số chẵn =',arr[i])
+//         }
+//         i++
+// }
+
+
+// // Câu l
+
+// i = 0 
+// while(i < arr.length){
+//         if(arr[i] % 2 != 0){
+//                 console.log('Phần tử số lẻ =',arr[i])
+//         }
+//         i++
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+//====================================================================
+
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let i = 0
+
+// do{
+//     console.log('Số i thứ %s = %s',i,arr[i])
+//     i++
+// }while(arr[i] !== undefined)
+
+
+// // Câu b
+
+// i = 0
+// let tongPT = 0
+// do{
+//     tongPT = tongPT + arr[i]
+//     i++
+// }
+//     while (arr[i] !== undefined)
+// console.log('Tổng PT =', tongPT )
+
+
+// // Câu c
+
+// i = 0
+// let max = -Infinity
+// let min = Infinity
+
+// do{
+//     if(arr[i] > max){
+//         max = arr[i]
+//     }
+//     if(arr[i] < min){
+//         min = arr[i]
+//     }
+//     i++
+// }while(arr[i] !== undefined)
+// console.log('Max = %s , Min = %s', max,min)
+
+// // Câu d
+
+// console.log('Trung bình cộng PT =', tongPT / i)
+
+// // Câu e
+
+// i = arr.length - 1
+//  do{
+//     console.log('Phần tử thứ %s = %s',i, arr[i])
+//  }while(i--)
+
+
+// // Câu f 
+
+// let tanSoXuatHien = {}
+// i = 0
+// do{
+//     tanSoXuatHien[arr[i]] = ( tanSoXuatHien[arr[i]] || 0 ) + 1
+//     i++
+// }while(i < arr.length)
+// console.log(tanSoXuatHien)
+
+
+// // Câu g
+// i = arr.length - 1
+
+// do{
+//     arr[i+1] = arr[i]
+// }while(i--)
+
+//  arr[0] = 117
+//  console.log(arr)
+
+
+// // Câu h
+//  checkTangDan = true
+// i = 0
+// do{
+//     if(arr[i] > arr[i+1]){
+//         checkTangDan = false
+//         break
+//     }
+//     i++
+// }while(arr[i] !== undefined)
+//     if(checkTangDan === true){
+//         console.log('Tăng dần')
+//     }
+//     else{
+//         console.log('Không tăng dần')
+//     }
+
+// // Câu i
+
+// i = 0
+// temp = 0
+// do{
+//     let j = i +1
+//         do{
+//             if(arr[i] > arr[j] ){
+//                 temp = arr[i]
+//                 arr[i] = arr[j]
+//                 arr[j] = temp
+//             }
+//             j++
+//         }while(arr[j] !== undefined)
+//     i++
+// }while(arr[i] !== undefined)
+
+// console.log('Tăng dần',arr)
+
+
+// // Câu j
+
+// i = 0
+// temp = 0
+
+// do{
+//     let j = i +1
+//     do{
+//         if(arr[i] < arr[j]){
+//             temp = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = temp
+//         }
+//     j++
+//     }while(arr[j] !== undefined)
+// i++
+// }while(arr[i] !== undefined)
+
+// console.log('Giảm dần',arr)
+
+
+
+// // Câu k
+
+// i = 0
+
+// do{
+//     if(arr[i] % 2 == 0){
+//         console.log('Số chẵn thứ %s = %s',i, arr[i])
+//     }
+//     i++
+// }while(arr[i] !== undefined)
+
+
+// // Câu l
+
+// i = 0
+
+// do{
+//     if(arr[i] %2 !== 0)
+//     console.log('Số lẻ thứ %s = %s',i,arr[i])
+//     i++
+// }while(arr[i] !== undefined)
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// Bài 2
+
+
+//---------------------------------- Vòng For ----------------------------------
 // Câu a
-let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-let i=0
-while(i<arr.length){
-        console.log('%s',i,arr)
-        i++
+
+let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+
+
+for(let i = 0; i < arr2.length; i++){
+    if(arr2[i] + arr2[ i + 1 ] == 10){
+        console.log(arr2[i],arr2[i+1])
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
