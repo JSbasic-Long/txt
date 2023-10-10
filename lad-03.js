@@ -505,30 +505,37 @@
 //---------------------------------- Vòng For ----------------------------------
 // Câu a
 
-let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-
-
-for(let i = 0; i < arr2.length; i++){
-    if(arr2[i] + arr2[ i + 1 ] == 10){
-        console.log(arr2[i],arr2[i+1])
+let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+for(let i = 0; i< arr.length; i++){
+    for(let j = i+1;j<arr.length;j++){
+        if(arr[i] + arr[j] == 10){
+            console.log(arr[i],arr[j])
+        }
     }
 }
 
 
+// Câu b
+
+let tanSoXuatHien = {}
+for(let i = 0; i < arr.length; i++){
+    tanSoXuatHien[arr[i]] = (tanSoXuatHien[arr[i]] || 1 ) 
+}
+
+console.log(tanSoXuatHien)
+
+
+
+
+// Câu c
+
+//                     arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+// Câu d
 
 
 
