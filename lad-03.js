@@ -339,8 +339,8 @@
 //====================================================================
 
 
-// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// let i = 0
+let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+let i = 0
 
 // do{
 //     console.log('Số i thứ %s = %s',i,arr[i])
@@ -381,12 +381,30 @@
 
 // console.log('Trung bình cộng PT =', tongPT / i)
 
-// // Câu e
+// //Câu e
 
 // i = arr.length - 1
 //  do{
 //     console.log('Phần tử thứ %s = %s',i, arr[i])
-//  }while(i--)
+//  }while(i = i- 1)
+
+//  // Cách 2 
+
+//  i = 0
+//  let j = arr.length - 1
+//  let temp = 0
+//  do{
+//     temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp
+    
+//     i++
+//     j = j - 1
+//  }
+//  while(i < j)
+// console.log( arr)
+
+
 
 
 // // Câu f 
@@ -400,7 +418,7 @@
 // console.log(tanSoXuatHien)
 
 
-// // Câu g
+// Câu g
 // i = arr.length - 1
 
 // do{
@@ -409,6 +427,19 @@
 
 //  arr[0] = 117
 //  console.log(arr)
+
+
+
+i = arr.length
+do{
+    arr[i] = arr[i - 1 ]
+    i--
+}while(arr[i] !== undefined)
+
+console.log(arr)
+
+
+
 
 
 // // Câu h
@@ -505,31 +536,34 @@
 //---------------------------------- Vòng For ----------------------------------
 // Câu a
 
-let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-for(let i = 0; i< arr.length; i++){
-    for(let j = i+1;j<arr.length;j++){
-        if(arr[i] + arr[j] == 10){
-            console.log(arr[i],arr[j])
-        }
-    }
-}
+// let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// for(let i = 0; i< arr.length; i++){
+//     for(let j = i+1;j<arr.length;j++){
+//         if(arr[i] + arr[j] == 10){
+//             console.log('Số cặp có tổng bằng 10',arr[i],arr[j])
+//         }
+//     }
+// }
 
 
-// Câu b
+// // Câu b
 
-let tanSoXuatHien = {}
-for(let i = 0; i < arr.length; i++){
-    tanSoXuatHien[arr[i]] = (tanSoXuatHien[arr[i]] || 1 ) 
-}
+// let tanSoXuatHien = {}
+// for(let i = 0; i < arr.length; i++){
+//     tanSoXuatHien[arr[i]] = (tanSoXuatHien[arr[i]] || 1 ) 
+// }
 
-console.log(tanSoXuatHien)
-
-
+// console.log(tanSoXuatHien)
 
 
-// Câu c
 
-//                     arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+
+// // Câu c
+
+// //                     arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+
+
+
 
 
 
@@ -537,6 +571,30 @@ console.log(tanSoXuatHien)
 
 // Câu d
 
+// let max = arr[0]
+// let max1 = arr[0]
+// let max2 = arr[0]
+
+
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i] > max){
+//         max = arr[i]
+//     }
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i] > max1 && arr[i] < max){
+//              max1 = arr[i]
+//         }
+//     }
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i] > max2 && arr[i] < max && arr[i] < max1){
+//             max2 = arr[i]
+//         }
+//     }
+// }
+// console.log('Số lớn nhất', max)
+// console.log('Số lớn nhì',max1)
+// console.log('Số lớn ba',max2)
+// console.log('Tổng PT 3 số lớn nhất =', max + max1 + max2)
 
 
 
@@ -555,6 +613,21 @@ console.log(tanSoXuatHien)
 
 
 
+// // Câu f
+
+// max = -Infinity
+// let min = Infinity
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i] > max){
+//         max = arr[i]
+//     }
+//     if(arr[i] < min){
+//         min = arr[i]
+//     }
+// }
+// console.log(max,min)
+// console.log('Độ lệch lớn nhất 2 PT =', max - min)
 
 
 
@@ -562,6 +635,66 @@ console.log(tanSoXuatHien)
 
 
 
+
+
+
+
+
+//============================== Vòng While ============================================
+
+
+
+// // Câu a
+// let i = 0 
+// while(arr[i] !== undefined){
+//         let j = i + 1
+//     while(arr[j] !== undefined){
+//         if(arr[i] + arr[j] == 10){
+//             console.log(arr[i], arr[j])
+//         }
+        
+//         j++
+//     }
+//     i++
+// }
+
+
+// // Câu b
+// let soLanXuatHien = {}
+// i = 0
+// while(arr[i] !==undefined){
+//     soLanXuatHien[arr[i]] = (soLanXuatHien[arr[i]] || 1 )
+//     i++
+// }
+// console.log(soLanXuatHien)
+
+
+// // Câu d
+
+
+
+// // //                     arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+
+
+
+// i = 0
+// let max = -Infinity
+// let max1 = -Infinity
+// let max2 = -Infinity
+// while(arr[i] !== undefined){
+//     if(arr[i] > max ){
+//         max = arr[i]
+//     }
+//     i++
+// }
+// console.log(max)
+// while(arr[i] !== undefined){
+//     if(arr[i] > max1 ){
+//         max1 = arr[i]
+//     }
+//     i++
+// }
+// console.log(max1)
 
 
 
