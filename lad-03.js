@@ -430,13 +430,13 @@ let i = 0
 
 
 
-i = arr.length
-do{
-    arr[i] = arr[i - 1 ]
-    i--
-}while(arr[i] !== undefined)
+// i = arr.length
+// do{
+//     arr[i] = arr[i - 1 ]
+//     i--
+// }while(arr[i] !== undefined)
 
-console.log(arr)
+// console.log(arr)
 
 
 
@@ -550,7 +550,7 @@ console.log(arr)
 
 // let tanSoXuatHien = {}
 // for(let i = 0; i < arr.length; i++){
-//     tanSoXuatHien[arr[i]] = (tanSoXuatHien[arr[i]] || 1 ) 
+//     tanSoXuatHien[arr[i]] = (tanSoXuatHien[arr[i]] || 1 ) + 1
 // }
 
 // console.log(tanSoXuatHien)
@@ -688,8 +688,9 @@ console.log(arr)
 //     i++
 // }
 // console.log(max)
+// i = 0
 // while(arr[i] !== undefined){
-//     if(arr[i] > max1 ){
+//     if(arr[i] > max1 && arr[i] < max){
 //         max1 = arr[i]
 //     }
 //     i++
