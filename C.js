@@ -80,7 +80,24 @@
 
 
 
-//
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     cout << "Nhập số tử thứ 1: ";
+//     int x;
+//     cin >> x;
+//     cout << "Nhập mẫu số thứ 1: ";
+//     int y;
+//     cin >> y;
+//     cout << "Nhập tử số thứ 2: ";
+//     int a;
+//     cin >> a;
+//     cout << "Nhập mẫu số thứ 2: ";
+//     int b;
+//     cin >> b;
+//     cout << "Tổng 2 phân số: " << ( (x*b) + (a*y) ) / (y*b) ;
+// }
 
 
 
